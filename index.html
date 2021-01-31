@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="ledp">
+	<meta name="description" content="Bootstrap">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS,JavaScript">
+
+  <title>Practice o Bootstrap</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+</head>
+<body>
+
+  <!--- header/navbar---->
+  <section class="Home">
+      <nav class="navbar navbar-expand-md bg-dark border border-bottom-dark">
+
+        <div class="container">
+          <a href="" class="navbar-band nav-link"><img src="assets/img/logo.png" width="70" height="70"></a>
+
+          <button class="navbar-toggler" data-target="#nav1" data-ride="collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="nav1">
+
+          <ul class="navbar-nav text-center ml-auto">
+            <li class="list-item"><a href="#Home" class="nav-link text-warning p-3">Home</a></li>
+            <li class="list-item"><a href="#About" class="nav-link text-warning p-3">About</a></li>
+            <li class="list-item"><a href="#Service" class="nav-link text-warning p-3">Service</a></li>
+            <li class="list-item"><a href="#Gallery" class="nav-link text-warning p-3">Gallery</a></li>
+            <li class="list-item"><a href="#Contact" class="nav-link text-warning p-3">Contact</a></li>
+          </ul>
+        </div>
+
+       </div>
+      </nav>
+
+        <!--- banner/Slide bar---->
+         <div id="slide1" class="carousel slide" data-ride="carousel">
+
+         <!--- Slide bar control---->
+         
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#slide1" date-slide-to="0"></li>
+              <li data-target="#slide1" date-slide-to="1"></li>
+              <li data-target="#slide1" date-slide-to="2"></li>
+            </ol>
+         
+
+           <div class="carousel-inner" role="listbox">
+
+             <div class="carousel-item active">
+               <img src="assets/img/p1.jpg" width="100%" height="550">
+
+             </div>
+             <div class="carousel-item">
+               <img src="assets/img/p2.jpg" width="100%" height="550">
+             </div>
+             <div class="carousel-item">
+               <img src="assets/img/p11.jpg" width="100%" height="550">
+             </div>
+           </div>
+      
+         
+         <!--- Slide bar control---->
+           <a href="#slide1" class="carousel-control-prev" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+           </a>
+         <a href="#slide1" class="carousel-control-next" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+           </a>
+         </div>
+         </section><br>
+
+
+         <!---About--->
+
+          <section id="About">
+
+            <div class="bg-success">
+              <h3 class="text-capital bg- display-4 text-center font-weight-bold py-3 text-light">About Us</h3>
+
+              <div class="container bg-light py-3">
+               <div class="row">
+
+              <div class="col-lg-6">
+                  <img src="assets/img/im1.jpg" width="90%" height="400">
+              </div>
+
+              <div class="col-lg-6 py-5">
+                <div>
+                  <h3 class="text-uppercase font-italic text-danger mb-3">This is our details</h3>
+                   <p class="h6 text-justify text-info ">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </p>
+
+                   <button class="btn btn-secondary ml-5 mt-3" data-toggle="modal" data-target="#text" >show details</button>
+
+                   <div class="modal" id="text">
+                     <div class="modal-dialog">
+                       <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h4 class="font-weight-bold text-success">show about us</h4>
+                          <button class="">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                          <p class="bg-light text-center text-secondary font-lowercase">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button class="btn btn-primary">close</button>
+                        </div>
+
+                       </div>
+                     </div>
+                   </div>
+                  
+                  </div>
+               </div>
+              </div>
+            </div>
+            <br>
+
+       <!--- Proccess bar--->              
+        <div class="progress-bar bg-success text-center font-italic text-warning py-3 display-4 font-weight-bold ">Progress Bar</div>
+
+          <div class="container bg-light">
+            <br>
+            <br>
+            <div class="progress">
+            <div class="progress-bar bg-danger text-left pl-3 w-25">
+                JavaScript SKILLS 25%
+              </div>
+          </div>
+
+              <div class="progress my-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-50">
+               JAVA SKILLS 50%
+             </div>
+             </div>
+
+             <div class="progress my-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-75">
+               CSS SKILLS 75%
+              </div>
+              </div>
+
+              <div class="progress my-4">
+            <div class="progress-bar progress-bar-striped bg-success w-100" >
+                HTML SKILLS 100%
+                 </div>
+               </div>
+               <br>
+             </div>
+            <br>
+               <br>
+
+          </div>
+          </section>
+          <br>          
+
+      <!--- card/service section---->
+
+      <section id ="Service">
+
+        <div class="bg-warning">
+           <h3 class="text-uppercase display-4 text-center  font-weight-bold mt-5 ">See Services</h3>
+
+           <div class="container bg-light py-5">
+
+             <div class="row">
+               <div class="col-lg-4 col-md-3 col-sm-6">
+
+                 <div class="card">
+                   <img src="assets/img/p7.jpg" width="100%">
+
+               <div class="card-body">
+                  <h3 class="text-primary">Title</h3>
+                  <p>
+                   consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis. 
+                 </p>
+
+                 <button class="btn btn-success text-light btn-block">submit</button>
+               </div>
+             </div>
+             </div>
+
+  <!---card section--->
+             <div class="col-lg-4 col-md-3 col-sm-6">
+                <div class="card">
+                 <img src="assets/img/p6.jpg" width="100%">
+
+                 <div class="card-body">
+                  <h3 class="text-primary">Title</h3>
+                 <p>
+                   consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis. 
+                 </p>
+                 <button class="btn btn-success text-light btn-block">submit</button>
+               </div>
+              </div>
+             </div>
+
+             <div class="col-lg-4 col-md-3 col-sm-6">
+              <div class="card">
+               <img src="assets/img/p12.jpg" width="100%">
+               <div class="card-body">
+                  <h3 class="text-primary">Title</h3>
+                 <p>
+                   consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis. 
+                 </p>
+                 <button class="btn btn-success text-light btn-block">submit</button>
+             </div>
+             </div>
+           </div>
+             </div> 
+           </div>
+
+        <!---alertbar--->              
+              <div class="alert font-italic font-weight-bold display-4 text-center mt-4 text-danger">Alert System</div>
+
+              <div class="container bg-light">
+               <br>
+               <br>
+
+                <div class="text-center alert alert-success">
+                  <strong>Success</strong> blog post <a href="" class="alert-link">check out</a>
+                </div>
+                <div class="text-center alert alert-primary">
+                  <strong>Attention</strong> have a message <a href="" class="alert-link">check out</a>
+                </div>
+                <div class="text-center alert alert-danger">
+                  <strong>Error</strong> data uploading failed <a href="" class="alert-link">check out</a>
+                </div>
+                <div class="text-center alert alert-warning">
+                  <strong>Warning</strong> check the box <a href="" class="alert-link">check out</a>
+                </div>
+                <div class="text-center alert alert-success">
+                  <strong>Success</strong> alert zone <a href="" class="alert-link">check out</a>
+                </div>
+                <br>
+                
+            </div>
+            <br> <br>
+           </div>
+         </section>
+
+<!---Gallery section--->
+
+      <section id="Gallery">
+ 
+          <div class="bg-secondary">
+            <h1 class=" text-warning font-weight-bold text-center mt-5 p-3 font-underline ">Visit Our Gallery</h1>
+           <div class="container bg-info">
+             <ul class="pt-3">
+               <li class="list-inline-item"><img src="assets/img/p8.jpg" width="212" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/p10.jpg" width="210" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/p13.jpg" width="212" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/im.jpg" width="210" height="180"></li>
+             </ul>
+             <ul>
+               <li class="list-inline-item"><img src="assets/img/p14.jpg" width="212" height="180"></li>
+               <li  class="list-inline-item"><img src="assets/img/photo.jpeg" width="210" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/img4.jpg" width="212" height="180"></li>
+               <li  class="list-inline-item"><img src="assets/img/p16.jpg" width="210" height="180"></li>
+
+               </ul>
+               <ul class="pb-3">
+               <li class="list-inline-item"><img src="assets/img/p20.jpg" width="212" height="180"></li>
+              <li class="list-inline-item"><img src="assets/img/p15.jpg" width="210" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/p5.jpg" width="212" height="180"></li>
+               <li class="list-inline-item"><img src="assets/img/p3.jpg" width="210" height="180"></li>
+             </ul>
+             </div>
+           </div>
+
+      </section> 
+      <br>
+
+
+      <!---Contact Section--->	
+    <section id ="Contact">
+
+        <div class="footer bg-dark">
+           <h3 class="text-uppercase text-info display-4 text-center  font-weight-bold ">Contact With Us</h3>
+
+           <div class="container bg-light py-5">
+
+            <div class="row">
+
+            <div class="col-lg-6">
+                <p class="text-right text-secondary">Are you want to contact with us?</p>
+              </div>
+
+            <div class="col-lg-6">
+                 <button class="btn btn-success btn-outline-warning  text-dark" data-target="#modal1" data-toggle="modal">click here</button>
+                
+                 <!---Modal section---->
+
+              <div class="modal" id="modal1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h3 class="text-primary">Sign Up</h3>
+                      <button class="close">&times;</button>
+                    </div>
+
+          <div class="modal-body  bg-dark">
+           <form class=" container ">
+            <div class=" row ">
+              <div class="col-md-6 mx-auto">
+            <input class="mt-4 border border-right-0 border-left-0 border-top-0 border-light bg-dark text-warning" type="text" name="fname" placeholder="user Name"><br>
+            <input class="mt-3 border border-right-0 border-left-0 border-top-0 border-light bg-dark text-warning" type="password" name="psd" placeholder="password"><br>
+            <input class="mt-3 border border-right-0 border-left-0 border-top-0 border-light bg-dark text-warning" type="text" name="email" placeholder="Enter your email">
+            <br>
+            <textarea class="mt-5 border border-0 bg-light text-dark rounded pl-3" placeholder="write your messages..."></textarea>                                             
+            <br>
+            <button class="btn btn-block btn-success mt-2"><a href=" " class="text-light btn-link"> submit </a></button>
+            </div>          
+            </div> 
+            <br>
+               </form>
+                  </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-danger" style="width: 100px">close</button>
+                    </div>
+
+                  </div>
+                </div>
+                
+                </div>
+  
+               </div>
+              
+              </div>
+               <br>
+
+               </div>
+              <br>
+
+             </div>
+           </div>
+         </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html
